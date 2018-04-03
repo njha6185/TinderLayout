@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nitishkumar.tinderlayout.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/actionbarid"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="23dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            app:srcCompat = "@drawable/profileimg"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            app:srcCompat = "@drawable/ic_tinder_icon"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:srcCompat = "@drawable/img"
+            />
+    </LinearLayout>
+    <View
+        android:id="@+id/actiobarline"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/actionbarid"/>
+
+    <RelativeLayout
+        android:id="@+id/relativecenterid"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:background="#f2f2f2"
+        android:gravity="center"
+        android:layout_below="@id/actiobarline">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:src="@drawable/bulb"
+            android:scaleType="fitXY" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/border"/>
+        <View
+            android:id="@+id/actiobarline2"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="4dp"
+            android:background="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name,"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold|normal"
+                    android:fontFamily="monospace"
+                    android:textColor="#FFFFFF"
+                    android:textSize="31sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23"
+                    android:layout_marginTop="22dp"
+                    android:textStyle="bold|normal"
+                    android:fontFamily="monospace"
+                    android:textColor="#FFFFFF"
+                    android:textSize="31sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABCD company"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="monospace"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A B Profile"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="monospace"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2"
+        android:layout_below="@id/relativecenterid"
+        android:paddingBottom="20dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="28dp"
+        android:paddingTop="19dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/back"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/close"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/starfav"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/heart"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/flash"/>
+
+    </LinearLayout>
+
+    <ImageView
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:layout_gravity="center"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+        android:layout_marginBottom="137dp"
+        android:layout_marginRight="20dp"
+    android:layout_weight="1"
+    android:src="@drawable/infoimg"/>
+
+
+</RelativeLayout>
